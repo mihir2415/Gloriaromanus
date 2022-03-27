@@ -1,0 +1,119 @@
+[
+    {   
+        "goal": "TREASURY" 
+    },
+
+    {
+        "goal":"CONQUEST"
+    },
+
+    {   
+        "goal":"WEALTH"
+    },
+
+    {   
+        "Combination": "AND",
+        "goal1": "WEALTH", 
+        "goal2": "CONQUEST"
+
+    }, 
+
+    {   
+        "Combination": "AND", 
+        "goal1": "WEALTH",
+        "goal2": "TREASURY"
+            
+    }, 
+
+    {   
+        "Combination": "AND", 
+        "goal1": "CONQUEST",
+        "goal2": "TREASURY"
+            
+    }, 
+
+    {
+        "Combination": "OR", 
+        "goal1": "CONQUEST", 
+        "goal2": "TREASURY"
+        
+    }, 
+
+    {
+        "Combination": "OR", 
+        "goal1": "WEALTH", 
+        "goal2": "TREASURY"
+    }, 
+
+    {
+        "Combination": "OR", 
+        "goal1": "WEALTH", 
+        "goal2": "CONQUEST"
+    }, 
+
+    { 
+        "Combination1": "OR", 
+        "goal1": "WEALTH", 
+        "Combination2": "OR", 
+        "goal2": "CONQUEST",
+        "goal3": "TREASURY"
+    }, 
+
+    {   
+        "Combination1": "AND", 
+        "goal1": "CONQUEST", 
+        "Combination2": "OR", 
+        "goal2": "TREASURY",
+        "goal3": "WEALTH"
+    }, 
+
+    { 
+        "Combination1": "AND", 
+        "goal1": "WEALTH", 
+        "Combination2": "OR", 
+        "goal2": "TREASURY",
+        "goal3": "CONQUEST"
+    },
+
+    { 
+        "Combination1": "AND", 
+        "goal1": "TREASURY", 
+        "Combination2": "OR", 
+        "goal2": "WEALTH",
+        "goal3": "CONQUEST"
+    },
+
+    { 
+        "Combination1": "OR", 
+        "goal1": "TREASURY", 
+        "Combination2": "AND", 
+        "goal2": "WEALTH",
+        "goal3": "CONQUEST"
+    },
+
+    { 
+        "Combination1": "OR", 
+        "goal1": "WEALTH", 
+        "Combination2": "AND", 
+        "goal2": "TREASURY",
+        "goal3": "CONQUEST"
+    },
+
+    { 
+        "Combination1": "OR", 
+        "goal1": "CONQUEST", 
+        "Combination2": "AND", 
+        "goal2": "TREASURY",
+        "goal3": "WEALTH"
+    },
+
+    { 
+        "Combination1": "AND", 
+        "goal1": "CONQUEST", 
+        "Combination2": "AND", 
+        "goal2": "TREASURY",
+        "goal3": "WEALTH"
+    }
+
+
+]

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Background?>
+<?import javafx.scene.layout.BackgroundFill?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="648.0" prefWidth="312.0" stylesheets="/unsw/gloriaromanus/style.css" StackPane.alignment="TOP_LEFT" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unsw.gloriaromanus.UnitMenuController">
+   <background>
+      <Background>
+         <fills>
+            <BackgroundFill>
+               <fill>
+                  <Color opacity="0.3" />
+               </fill>
+            </BackgroundFill>
+         </fills>
+      </Background>
+   </background>
+   <children>
+      <HBox prefHeight="64.0" prefWidth="310.0">
+         <children>
+            <Label prefHeight="47.0" prefWidth="104.0" text="Your Province:" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="SelectedProvince" alignment="CENTER" prefHeight="42.0" prefWidth="168.0" />
+         </children>
+      </HBox>
+      <VBox prefHeight="474.0" prefWidth="272.0">
+         <children>
+            <VBox prefHeight="66.0" prefWidth="272.0">
+               <children>
+                  <MenuButton mnemonicParsing="false" text="Set Tax of Province">
+                     <items>
+                        <MenuItem fx:id="normal_tax_radionormal_tax" mnemonicParsing="false" onAction="#clickedNormalTax" text="Normal Tax" />
+                        <MenuItem fx:id="high_tax_button" mnemonicParsing="false" onAction="#clickedHighTax" text="High Tax" />
+                        <MenuItem fx:id="low_tax_button" mnemonicParsing="false" onAction="#clickedLowTax" text="Low Tax" />
+                        <MenuItem fx:id="very_high_tax_button" mnemonicParsing="false" onAction="#clickedveryHighTax" text="Very High Tax" />
+                     </items>
+                  </MenuButton>
+               </children>
+            </VBox>
+            <HBox prefHeight="57.0" prefWidth="272.0">
+               <children>
+                  <ComboBox fx:id="unitComboBox" prefWidth="150.0" promptText="Units To Move" />
+               </children>
+            </HBox>
+            <HBox prefHeight="56.0" prefWidth="272.0">
+               <children>
+                  <ComboBox fx:id="provComboBox" prefWidth="150.0" promptText="Move to Province" />
+                  <Label prefHeight="17.0" prefWidth="46.0" />
+                  <Button fx:id="moveUnitButton" mnemonicParsing="false" onAction="#clickedmoveUnitButton" text="Move Unit" />
+               </children>
+            </HBox>
+            <HBox prefHeight="228.0" prefWidth="272.0" />
+            <TextArea fx:id="resultBox" prefHeight="87.0" prefWidth="272.0" />
+         </children>
+      </VBox>
+      <HBox layoutX="30.0" layoutY="94.0" prefHeight="89.0" prefWidth="272.0">
+         <children>
+            <Button fx:id="InvasionMenuButton" mnemonicParsing="false" onAction="#clickedInvasionMenu" prefHeight="54.0" prefWidth="114.0" text="Invasion Menu" />
+            <Label prefHeight="17.0" prefWidth="44.0" />
+            <Button fx:id="TrainingMenuButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#clickedTrainingMenu" prefHeight="54.0" prefWidth="114.0" text="Training Menu" />
+         </children>
+      </HBox>
+      <Button fx:id="displayButton" mnemonicParsing="false" onMousePressed="#clickedDisplay" onMouseReleased="#releasedDisplay" text="Display" />
+      <Button fx:id="endGameButton" mnemonicParsing="false" onAction="#clickedEndGame" text="END GAME" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

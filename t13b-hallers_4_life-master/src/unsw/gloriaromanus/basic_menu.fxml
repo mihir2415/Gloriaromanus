@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Background?>
+<?import javafx.scene.layout.BackgroundFill?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxWidth="452.0" prefHeight="697.0" prefWidth="452.0" spacing="10" styleClass="panel-region" stylesheets="/unsw/gloriaromanus/style.css" StackPane.alignment="TOP_LEFT" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unsw.gloriaromanus.BasicMenuController">
+    <padding>
+        <Insets topRightBottomLeft="10" />
+    </padding>
+    <background>
+        <Background>
+            <fills>
+                <BackgroundFill>
+                    <fill>
+                        <Color opacity="0.3" />
+                    </fill>
+                </BackgroundFill>
+            </fills>
+        </Background>
+    </background>
+   <HBox prefHeight="47.0" prefWidth="415.0">
+      <children>
+         <Label prefHeight="36.0" prefWidth="90.0" text="Train Unit in">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <Label prefHeight="35.0" prefWidth="88.0" text="Province:">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <TextField fx:id="selected_province" editable="false" prefHeight="27.0" prefWidth="104.0" text="" />
+         <Label prefHeight="30.0" prefWidth="48.0" text=" Gold :">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <TextField fx:id="treasury_avail" editable="false" prefHeight="27.0" prefWidth="74.0" />
+      </children>
+   </HBox>
+   <HBox prefHeight="18.0" prefWidth="270.0">
+      <children>
+         <Label prefHeight="17.0" prefWidth="129.0" text="Elephants" />
+         <Label prefHeight="17.0" prefWidth="147.0" text="Cost :     $4" />
+         <Button fx:id="trainElephants" mnemonicParsing="false" onAction="#createElephants" text="Train" />
+      </children>
+   </HBox>
+   <HBox prefHeight="18.0" prefWidth="270.0">
+      <children>
+         <Label prefHeight="17.0" prefWidth="128.0" text="Melee" />
+         <Label prefHeight="17.0" prefWidth="149.0" text="Cost :    $8" />
+         <Button fx:id="trainMelee" mnemonicParsing="false" onAction="#createMelee" text="Train" />
+      </children>
+   </HBox>
+   <HBox prefHeight="18.0" prefWidth="270.0">
+      <children>
+         <Label prefHeight="17.0" prefWidth="126.0" text="Druid" />
+         <Label prefHeight="17.0" prefWidth="152.0" text="Cost :   $9" />
+         <Button fx:id="trainDruid" mnemonicParsing="false" onAction="#createDruid" text="Train" />
+      </children>
+   </HBox>
+   <HBox prefHeight="18.0" prefWidth="270.0">
+      <children>
+         <Label prefHeight="17.0" prefWidth="133.0" text="Horse-Archer" />
+         <Label prefHeight="17.0" prefWidth="143.0" text="Cost :   $7" />
+         <Button fx:id="trainHorse" mnemonicParsing="false" onAction="#createHorse" text="Train" />
+      </children>
+   </HBox>
+   <HBox prefHeight="18.0" prefWidth="270.0">
+      <children>
+         <Label prefHeight="17.0" prefWidth="132.0" text="Pikemen" />
+         <Label prefHeight="17.0" prefWidth="145.0" text="Cost :    $5" />
+         <Button fx:id="trainPikemen" mnemonicParsing="false" onAction="#createPikemen" text="Train" />
+      </children>
+   </HBox>
+   <HBox prefHeight="18.0" prefWidth="270.0">
+      <children>
+         <Label prefHeight="17.0" prefWidth="135.0" text="Melee Cavalry" />
+         <Label prefHeight="17.0" prefWidth="142.0" text="Cost :   $5" />
+         <Button fx:id="trainMeleeCavalry" mnemonicParsing="false" onAction="#createMeleeCavalry" text="Train" />
+      </children>
+   </HBox>
+   <HBox prefHeight="18.0" prefWidth="270.0">
+      <children>
+         <Label prefHeight="17.0" prefWidth="133.0" text="Roman legionary" />
+         <Label prefHeight="17.0" prefWidth="144.0" text="Cost :   $8" />
+         <Button fx:id="trainLegionary" mnemonicParsing="false" onAction="#createLegionary" text="Train" />
+      </children>
+   </HBox>
+   <HBox prefHeight="18.0" prefWidth="270.0">
+      <children>
+         <Label prefHeight="17.0" prefWidth="132.0" text="Germanic berserker" />
+         <Label prefHeight="17.0" prefWidth="147.0" text="Cost :  $7" />
+         <Button fx:id="trainGermanic" mnemonicParsing="false" onAction="#createGermanic" text="Train" />
+      </children>
+   </HBox>
+   <HBox prefHeight="18.0" prefWidth="270.0">
+      <children>
+         <Label prefHeight="17.0" prefWidth="131.0" text="Celtic Briton berserker" />
+         <Label prefHeight="17.0" prefWidth="150.0" text="Cost :    $3" />
+         <Button fx:id="trainCeltic" mnemonicParsing="false" onAction="#createCeltic" text="Train" />
+      </children>
+   </HBox>
+   <HBox prefHeight="18.0" prefWidth="270.0">
+      <children>
+         <Label prefHeight="17.0" prefWidth="131.0" text="Gallic berserker" />
+         <Label prefHeight="17.0" prefWidth="150.0" text="Cost :    $6" />
+         <Button fx:id="trainGallic" mnemonicParsing="false" onAction="#createGallic" text="Train" />
+      </children>
+   </HBox>
+   <HBox prefHeight="18.0" prefWidth="270.0">
+      <children>
+         <Label prefHeight="17.0" prefWidth="131.0" text="Javelin Skirmishers" />
+         <Label prefHeight="17.0" prefWidth="150.0" text="Cost :    $5" />
+         <Button fx:id="trainJavelin" mnemonicParsing="false" onAction="#createJavelin" text="Train" />
+      </children>
+   </HBox>
+   <TextArea fx:id="resultBox" prefHeight="69.0" prefWidth="432.0" />
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+          <Button alignment="CENTER" onAction="#clickedInavsionMenuButton" prefHeight="48.0" prefWidth="119.0" text="Inavsion Menu" />
+         <Label prefHeight="51.0" prefWidth="165.0" />
+         <Button mnemonicParsing="false" onAction="#clickedUnitMenuButton" prefHeight="51.0" prefWidth="123.0" text="Unit Menu" />
+      </children>
+   </HBox>
+   <Button fx:id="displayButton" mnemonicParsing="false" onMousePressed="#clickedDisplay" onMouseReleased="#releasedDisplay" text="Display" />
+   <Button fx:id="endGameButton" mnemonicParsing="false" onAction="#clickedEndGame" text="END GAME" />
+</VBox>

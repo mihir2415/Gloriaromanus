@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Background?>
+<?import javafx.scene.layout.BackgroundFill?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_RIGHT" maxWidth="452.0" prefHeight="636.0" prefWidth="452.0" spacing="10" styleClass="panel-region" stylesheets="/unsw/gloriaromanus/style.css" StackPane.alignment="TOP_LEFT" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unsw.gloriaromanus.GoalsetterController">
+    <padding>
+        <Insets topRightBottomLeft="10" />
+    </padding>
+    <background>
+        <Background>
+            <fills>
+                <BackgroundFill>
+                    <fill>
+                        <Color opacity="0.3" />
+                    </fill>
+                </BackgroundFill>
+            </fills>
+        </Background>
+    </background>
+   <children>
+      <HBox prefHeight="40.0" prefWidth="439.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Set Your Own Goal" textAlignment="CENTER" wrappingWidth="438.5556640625">
+               <font>
+                  <Font name="Phosphate Inline" size="26.0" />
+               </font></Text>
+         </children>
+      </HBox>
+      <TextArea prefHeight="27.0" prefWidth="439.0" text="Please read the following guidelines regarding setting your own goal." />
+      <HBox prefHeight="51.0" prefWidth="439.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="To set only one goal  please enter like this:" wrappingWidth="148.45428466796875" />
+            <TextField editable="false" prefHeight="27.0" prefWidth="262.0" text="{&quot;goal&quot;:&quot;CONQUEST&quot;}" />
+         </children>
+      </HBox>
+      <HBox prefHeight="51.0" prefWidth="439.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="To set two goals  please enter like this:" wrappingWidth="137.87594604492188" />
+            <TextArea editable="false" prefHeight="51.0" prefWidth="299.0" text="{&quot;goal2&quot;:&quot;CONQUEST&quot;,&quot;goal1&quot;:&quot;WEALTH&quot;,&quot;Combination&quot;:&quot;AND&quot;}" wrapText="true" />
+         </children>
+      </HBox>
+      <HBox prefHeight="77.0" prefWidth="439.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="To set three goals please enter like this:" wrappingWidth="137.87594604492188" />
+            <TextArea editable="false" prefHeight="57.0" prefWidth="299.0" text="{&quot;Combination1&quot;:&quot;OR&quot;,&quot;goal2&quot;:&quot;CONQUEST&quot;,&quot;goal1&quot;:&quot;WEALTH&quot;,&quot;Combination2&quot;:&quot;OR&quot;,&quot;goal3&quot;:&quot;TREASURY&quot;}&#10;&#10;&#10;" wrapText="true" />
+         </children>
+      </HBox>
+      <HBox prefHeight="77.0" prefWidth="439.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Enter your goal :" wrappingWidth="139.5033721923828" />
+            <TextArea fx:id="goal_input" prefHeight="77.0" prefWidth="203.0" promptText="{ &quot;goal&quot;:&quot;WEALTH&quot;}" />
+         </children>
+      </HBox>
+      <HBox prefHeight="51.0" prefWidth="439.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="199.7185516357422" />
+            <Button fx:id="button_setter" mnemonicParsing="false" onAction="#clickedgoal" prefHeight="27.0" prefWidth="115.0" text="Set Goal" />
+         </children>
+      </HBox>
+      <HBox prefHeight="51.0" prefWidth="439.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Was the goal set:" wrappingWidth="148.45428466796875" />
+            <TextField fx:id="return_succes" editable="false" prefHeight="27.0" prefWidth="262.0" />
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Button fx:id="invasionMenuButton" mnemonicParsing="false" onAction="#clickedInvasionMenuButton" prefHeight="27.0" prefWidth="102.0" text="Invasion Menu" />
+         </children>
+      </HBox>
+      <Button fx:id="endGameButton" mnemonicParsing="false" onAction="#clickedEndGame" text="END GAME" />
+   </children>
+</VBox>

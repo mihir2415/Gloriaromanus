@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Background?>
+<?import javafx.scene.layout.BackgroundFill?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+
+<VBox maxWidth="409.0" prefHeight="297.0" prefWidth="409.0" spacing="10" styleClass="panel-region" stylesheets="/unsw/gloriaromanus/style.css" StackPane.alignment="BOTTOM_RIGHT" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unsw.gloriaromanus.StatsController">
+    <padding>
+        <Insets topRightBottomLeft="10" />
+    </padding>
+    <background>
+        <Background>
+            <fills>
+                <BackgroundFill>
+                    <fill>
+                        <Color opacity="0.3" />
+                    </fill>
+                </BackgroundFill>
+            </fills>
+        </Background>
+    </background>
+   <HBox prefHeight="34.0" prefWidth="375.0">
+      <children>
+         <Label prefHeight="27.0" prefWidth="55.0" text="Faction :" />
+         <TextField fx:id="faction_name" editable="false" prefHeight="27.0" prefWidth="105.0" />
+      </children>
+   </HBox>
+   <HBox layoutX="20.0" layoutY="20.0" prefHeight="29.0" prefWidth="375.0">
+      <children>
+         <Label prefHeight="17.0" prefWidth="89.0" text="Treasury  Goal:" />
+         <ProgressBar fx:id="treasury_goal" prefHeight="18.0" prefWidth="180.0" progress="0.0" />
+      </children>
+   </HBox>
+   <HBox prefHeight="29.0" prefWidth="375.0">
+      <children>
+         <Label prefHeight="17.0" prefWidth="89.0" text="Wealth Goal:" />
+         <ProgressBar fx:id="wealth_goal" prefHeight="18.0" prefWidth="180.0" progress="0.0" />
+      </children>
+   </HBox>
+   <HBox prefHeight="29.0" prefWidth="375.0">
+      <children>
+         <Label prefHeight="17.0" prefWidth="89.0" text="Conquest Goal:" />
+         <ProgressBar fx:id="conquest_goal" prefHeight="18.0" prefWidth="180.0" progress="0.0" />
+      </children>
+   </HBox>
+   <HBox prefHeight="29.0" prefWidth="375.0">
+      <children>
+         <Label prefHeight="17.0" prefWidth="89.0" text="Total Treasury:" />
+         <TextField fx:id="totoal_treasury" editable="false" prefHeight="27.0" prefWidth="77.0" />
+         <Label prefHeight="17.0" prefWidth="104.0" text="     Total Wealth:" />
+         <TextField fx:id="total_wealth" editable="false" prefHeight="27.0" prefWidth="77.0" />
+      </children>
+   </HBox>
+   <HBox prefHeight="93.0" prefWidth="389.0">
+      <children>
+         <Label prefHeight="27.0" prefWidth="55.0" text="Goal:" />
+         <TextArea fx:id="faction_goal" prefHeight="75.0" prefWidth="308.0" wrapText="true" />
+      </children>
+   </HBox>
+</VBox>
